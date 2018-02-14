@@ -1,0 +1,48 @@
+body { 
+	margin: 15%; 
+	background-color: #e2e0e0;
+	font-family: 'Lato', sans-serif;
+	margin-top: 5%;
+	font-size: 17px;
+	letter-spacing: 0.03em;
+	background-image: url(glasses.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	color: #4484CE;
+	font-size: 300%;
+	letter-spacing: 0.5em;
+	word-spacing: 100em;
+
+}
+
+h2 {
+	color: #F19F4D;
+	font-size: 200%;
+	letter-spacing: 0.5em;
+}
+
+h1, h2 {
+	text-shadow: 2px 2px 2px black;
+}
+
+p {
+	text-align: justify;
+	letter-spacing: 0.05em;
+	margin-top: 3%;
+	padding: 5px;
+	word-spacing: 0.1em;
+}
+
+ol {
+	margin-left: 4em;
+}
+
+.first {
+	font-size: 0.7em;
+	text-decoration: underline;
+
+}
+
