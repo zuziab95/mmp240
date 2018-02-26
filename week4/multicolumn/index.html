@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multi-column-layout</title>
+
+	<style>
+
+		body {
+			background-color: gray;
+		}
+
+		header {
+			height: 300px;
+			margin-top: 50px;
+			margin-bottom: 10px;
+			background-color: black;
+		}
+
+		aside, article {
+			height: 200px;
+			width: 33.33%;	
+		}
+
+		aside {
+			background-color: tomato;
+		}
+
+		article {
+			background-color: black;
+		}
+
+		.firstrow {
+			float: left;
+		}
+		
+		.secondrow {
+			float: left;
+			margin-bottom: 1%;
+		}
+
+		footer {
+			clear: both;
+			height: 150px;
+			background-color: black;
+		}
+	
+
+	</style>
+</head>
+<body>
+
+	<header></header>
+
+ 	
+		<aside class="firstrow"></aside>
+
+		<article class="firstrow"></article>
+
+		<aside class="firstrow"></aside>
+	
+		<article class="secondrow"></article>
+
+		<aside class="secondrow"></aside>
+
+		<article class="secondrow"></article>
+	
+
+
+	<footer></footer>
+
+</body>
+</html>
