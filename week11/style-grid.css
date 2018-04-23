@@ -1,0 +1,117 @@
+/**
+ * The primary stylesheet for the CSS Grid Playground.
+ * This sheet pulls in surrounding components allowing you to focus on specifics.
+ */
+
+/* Components */
+@import url('CSS/reset.css');
+@import url('CSS/accessibility.css');
+@import url('CSS/layout.css');
+@import url('CSS/typography.css');
+@import url('CSS/masthead.css');
+@import url('CSS/boxes.css');
+
+/* CSS Grid Playground */
+
+.the-grid{
+	display: grid;
+	grid-row-gap: 10px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 4fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+		"header"
+		"aside"
+		"article"
+		"aside2"
+		"article2"
+		"aside3"
+		"article3"
+		"footer";
+	}
+
+
+@media screen and (min-width: 600px) {
+	.the-grid{
+		display: grid;
+		grid-row-gap: 10px;
+		grid-column-gap: 10px;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr 4fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: 
+			"header header header"
+			"aside article article"
+			"footer footer footer"
+			"aside2 aside2 aside2"
+			"article2 article2 article2"
+			"aside3 aside3 aside3" 
+			"article3 article3 article3";
+		}
+
+}
+
+@media screen and (min-width: 900px) {
+	.the-grid{
+		display: grid;
+		grid-row-gap: 10px;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr 3fr 3fr 1fr;
+		grid-template-areas: 
+			"header header header"
+			"aside article aside2"
+			"article2 aside3 article3"
+			"footer footer footer";
+		}
+
+}
+
+	.blue {
+		grid-area: header;
+	}	
+
+	.purple{
+		grid-area: aside;
+	}
+
+	.green{
+		grid-area: article;
+	}
+
+	.yellow {
+		grid-area: aside2;
+	}
+
+	.orange{
+		grid-area: article2;
+	}
+
+	.red {
+		grid-area: aside3;
+	}
+
+	.slate{
+		grid-area: article3;
+	}
+
+	.lineblue{
+		grid-area: footer;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
