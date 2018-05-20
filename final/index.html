@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>God's Food</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <style>
+
+      .article a {
+            color: black;
+            text-decoration: none;
+      }
+.article a:hover {
+      text-decoration: underline;
+}
+
+            .piclatest {
+                  width: 50%;
+            }
+
+            .item1 a {
+                  color: white;
+                  font-weight: bolder;
+            }
+
+            .item1{
+                  width: 70%;
+            }
+
+            .item1:hover {
+                  text-decoration: underline;
+            }
+      </style>
+</head>
+<body>
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                             <a href="index.html">GOD'S FOOD</a> 
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="neighborhoods.html">Neighborhoods</a></li>
+                                    <li><a href="cheapeats.html">Cheap Eats</a></li>
+                                    <li><a href="mostpopular.html">Most Popular</a></li>
+                                    <li><a href="about.html">About</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+                  
+
+            </header>
+
+
+            <div class="all">
+            <div class="container">
+                        <div class="item1"><a href="pizzaarticle.html"> The Best Pizza in <br> New York City, <br> According to Top<br> Chefs</a></div>
+                  </div>
+
+            <div class="container">
+            <div class="undermain1"> 
+                  <img src="bulgogi.jpg"> 
+                  <p>The 38 Essential Restaurants in New York City</p>
+            </div>
+      </div>
+
+      <div class="container">
+            <div class="undermain2" > 
+                  <img src="hottest.jpg"> 
+                  <p>The Hottest Restaurants in Brooklyn Right Now</p>
+            </div>
+      </div>
+
+            <div class="simple-subscription-form">
+  <form>
+    <h4>Subscribe</h4>
+    <p>Receive updates and latest news direct from our team. Simply enter your email below :</p>
+    <div class="input-group">
+      <span class="input-group-label">
+        <i class="fa fa-envelope"></i>
+      </span>
+      <input class="input-group-field" type="email" placeholder="Email" required>
+      <button class="button">Sign up now</button>
+</div>
+  </form>
+
+</div>
+
+
+
+
+<div class="latestnewseverything">
+<div class="latestnews">
+                  <p>Latest Articles</p>      
+            </div>      
+                  <div class="article">
+                        <a href="mexican.html"><img class="piclatest" src="mexican.jpg">
+                        <p>The 16 Best Mexican Spots in NYC</p></a>
+                        <div class="byline">
+                              <p>by <span>AMY SCHULMAN</span></p>
+                        </div>
+                  </div>      
+      
+                  <div class="article">
+                        <a href="best5.html"><img class="piclatest" src="5places.jpg">
+                        <p>5 Restaurants to Try This Weekend in NYC</p></a>
+                        <div class="byline">
+                              <p>by <span>Kayla Kumari Upadhyaya </span></p>
+                        </div>
+                  </div>      
+    
+
+                  <div class="article">
+                        <a href="bestburgers.html"><img class="piclatest" src="burger.jpg">
+                        <p>New York City's Best Burgers</p></a>
+                        <div class="byline">
+                              <p>by <span>Meagan Fredette</span></p>
+                        </div>
+                  </div>      
+</div>
+</div>
+</div>
+
+      <footer>
+      <div class="leftside"><p>God's Food</p></div>
+      <div class="rightside"><p>© 2018 God's Food, Inc. All Rights Reserved</p></div>
+</footer>
+
+      </div>
+
+
+ 
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+</body>
+</html>

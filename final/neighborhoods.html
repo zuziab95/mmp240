@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>God's Food</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <style>
+
+      @media(max-width: 786px) {
+          
+.item1{
+   font-size: 300%;
+   font-weight: bolder;
+   width: 90%;
+}
+            header {
+      width: 100%;
+      height: 60vh;
+      background: url(nei/New-York.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      margin-bottom: 20vh;
+}
+
+.soho, .lower, .east, .west{
+  -webkit-filter: brightness(60%);
+}
+
+.neighborhoodsunder1, .neighborhoodsunder2 {
+      display: block;
+      margin: auto;
+      width: 70%;
+      border-top: white solid 40px;
+      margin-top: 7vh;
+
+}
+
+
+.fournei {
+      background-color: white;
+      width: 100%;
+
+}
+
+.container .neighborhoodsunder1 p, .container .neighborhoodsunder2 p {
+      position: absolute;
+      margin: auto;
+      margin-top: -32%;
+      margin-left: 20%;
+      margin-right: 0%;
+      margin-bottom: 20%;
+      padding: 18px;
+      font-size: 90%;
+      text-align: center; 
+      width: 20%;
+       letter-spacing: 1px;
+       color: white;
+       background-color:rgba(000,000,000,0.5);
+       font-weight: bold;
+
+}
+}
+
+
+
+ @media(min-width: 786px) {
+            .piclatest {
+                  width: 50%;
+            }
+
+.item1 {
+    margin-top: -55vh;
+     font-weight: bolder;
+
+}
+            header {
+      width: 100%;
+      height: 80vh;
+      background: url(New-York.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      margin-bottom: 10vh;
+}
+
+.soho, .lower, .east, .west{
+  -webkit-filter: brightness(60%);
+}
+
+.neighborhoodsunder1, .neighborhoodsunder2 {
+      display: block;
+      float: left;
+      width: 48%;
+      border-top: white solid 20px;
+
+
+}
+
+.neighborhoodsunder1 {
+      border-right: solid white 2px;
+}
+
+
+.fournei {
+      background-color: white;
+      width: 100%;
+}
+
+.container .neighborhoodsunder1 p, .container .neighborhoodsunder2 p {
+      position: absolute;
+      margin: auto;
+      margin-top: -14%;
+      margin-left: 7%;
+      margin-right: 0%;
+      margin-bottom: 20%;
+      padding: 18px;
+      font-size: 120%;
+      text-align: center; 
+      width: 20%;
+       letter-spacing: 1px;
+       color: white;
+       background-color:rgba(000,000,000,0.5);
+       font-weight: bold;
+
+}
+
+
+}
+
+      </style>
+</head>
+<body>
+      <div class="wrapper">
+            <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                           <a href="index.html">GOD'S FOOD</a> 
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="neighborhoods.html">Neighborhoods</a></li>
+                                    <li><a href="cheapeats.html">Cheap Eats</a></li>
+                                    <li><a href="mostpopular.html">Most Popular</a></li>
+                                    <li><a href="about.html">About</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+            <header>
+
+                  
+                  
+
+            </header>
+
+<div class="container">
+                        <div class="item1">Neighborhoods</div>
+                  </div>
+<div class="all">
+<div class="fournei">
+                  <div class="container">
+            <div class="neighborhoodsunder1"> 
+                  <img class="soho" src="small/soho.jpg"> 
+                  <p>Soho</p>
+            </div>
+      </div>
+
+      <div class="container">
+            <div class="neighborhoodsunder2" > 
+                  <img class="lower" src="small/lower.jpg"> 
+                  <p>Lower East Side</p>
+            </div>
+      </div>
+
+      <div class="container">
+            <div class="neighborhoodsunder1" > 
+                  <img class="west" src="small/west.jpg"> 
+                  <p>West Village</p>
+            </div>
+      </div>
+
+       <div class="container">
+            <div class="neighborhoodsunder2" > 
+                  <img class="east" src="small/east.jpg"> 
+                  <p>East Village</p>
+            </div>
+      </div>
+</div>
+
+</div>
+</div>
+
+
+
+            <footer>
+      <div class="leftside"><p>God's Food</p></div>
+      <div class="rightside"><p>© 2018 God's Food, Inc. All Rights Reserved</p></div>
+</footer>
+
+      </div>
+
+
+ 
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+</body>
+</html>
